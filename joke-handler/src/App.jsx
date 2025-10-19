@@ -13,7 +13,7 @@ function App() {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch("http://localhost:8000");
+      const response = await fetch("https://joke-displayer.onrender.com");
       const data = await response.json();
       const id = Math.floor(Math.random() * data.length);
       setJoke(data[id]);
